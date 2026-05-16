@@ -1,10 +1,10 @@
 import axios from 'axios';
 
-// Vite requires the "VITE_" prefix to see the variable!
-const API_BASE = import.meta.env.VITE_API_URL || 'http://localhost:8080/api';
+// We are putting the link directly here to avoid Environment Variable issues
+const RENDER_BACKEND_URL = "https://personal-data-twin-api.onrender.com/api";
 
 const API = axios.create({ 
-  baseURL: API_BASE 
+  baseURL: RENDER_BACKEND_URL 
 });
 
 export const dataAPI = {
