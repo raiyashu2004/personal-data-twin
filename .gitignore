@@ -1,0 +1,18 @@
+# Java / Backend
+target/
+*.class
+.mvn/
+backend/data/
+
+# Node / Frontend
+node_modules/
+dist/
+.vite/
+package-lock.json
+
+# IDE / System
+.idea/
+*.iml
+.DS_Store
+*.mv.db
+*.trace.db

@@ -1,0 +1,9 @@
+:root {
+  --bg-base: #070b14; --bg-card: #0d1420; --cyan: #00e5ff; --text: #e8f4ff;
+  --font-display: 'Outfit', sans-serif;
+}
+body { background: var(--bg-base); color: var(--text); font-family: var(--font-display); margin: 0; }
+.card { background: var(--bg-card); border: 1px solid rgba(0, 229, 255, 0.12); border-radius: 12px; padding: 24px; }
+.btn-primary { background: var(--cyan); color: #000; border: none; padding: 10px 20px; border-radius: 8px; font-weight: bold; cursor: pointer; }
+nav a { color: #7a9bbf; text-decoration: none; padding: 10px; display: block; }
+nav a.active { color: var(--cyan); background: rgba(0, 229, 255, 0.08); border-left: 2px solid var(--cyan); }
