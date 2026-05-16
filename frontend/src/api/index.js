@@ -1,8 +1,10 @@
 import axios from 'axios';
 
-// This connects to your Spring Boot server
-const API = axios.create({
-  baseURL: 'http://localhost:8080/api'
+// This checks if we are on the internet (production) or local (development)
+const API_BASE_URL = import.meta.env.VITE_API_URL || 'http://localhost:8080/api';
+
+const API = axios.create({ 
+  baseURL: API_BASE_URL 
 });
 
 export const dataAPI = {
